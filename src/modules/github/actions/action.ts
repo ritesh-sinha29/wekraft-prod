@@ -23,7 +23,7 @@ export const getRepositories = async (
     sort: "updated",
     direction: "desc",
     visibility: "all",
-    affiliation: "owner,organization_member",
+    affiliation: "owner,collaborator,organization_member",
     page: page,
     per_page: perPage,
   });
@@ -39,7 +39,7 @@ export const searchRepositories = async (query: string) => {
     sort: "updated",
     direction: "desc",
     visibility: "all",
-    affiliation: "owner,organization_member",
+    affiliation: "owner,collaborator,organization_member",
     per_page: 100, // Fetch the 100 most recently active repos
   });
 
