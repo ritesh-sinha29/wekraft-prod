@@ -175,7 +175,9 @@ export const createWebhook = async (
   repo: string,
 ): Promise<{ success: boolean; error?: string }> => {
   const webhookUrl =
-    process.env.WEBHOOK_URL_NGROK || process.env.NEXT_PUBLIC_APP_URL;
+    process.env.VERCEL_ENV === "production"
+      ? process.env.NEXT_PUBLIC_APP_URL || process.env.WEBHOOK_URL_NGROK
+      : process.env.WEBHOOK_URL_NGROK || process.env.NEXT_PUBLIC_APP_URL;
 
   if (!webhookUrl) {
     return { success: false, error: "Webhook URL is not configured" };
