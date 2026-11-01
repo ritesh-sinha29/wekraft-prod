@@ -174,41 +174,67 @@ export const createWebhook = async (
   owner: string,
   repo: string,
 ): Promise<{ success: boolean; error?: string }> => {
-  const webhookUrl = process.env.WEBHOOK_URL_NGROK;
+  const webhookUrl =
+    process.env.WEBHOOK_URL_NGROK || process.env.NEXT_PUBLIC_APP_URL;
 
   if (!webhookUrl) {
     return { success: false, error: "Webhook URL is not configured" };
   }
 
-  const fullWebhookUrl = `${webhookUrl}/api/webhooks/github`;
-
-  const token = await getGithubAccessToken();
-  const octokit = new Octokit({ auth: token });
-
-  const { data: hooks } = await octokit.rest.repos.listWebhooks({
-    owner,
-    repo,
-  });
-  const existingHook = hooks.find((hook) => hook.config.url === fullWebhookUrl);
-
-  if (existingHook) {
-    return { success: true };
+  let fullWebhookUrl: string;
+  try {
+    const parsedWebhookUrl = new URL(webhookUrl);
+    parsedWebhookUrl.pathname = "/api/webhooks/github";
+    parsedWebhookUrl.search = "";
+    parsedWebhookUrl.hash = "";
+    fullWebhookUrl = parsedWebhookUrl.toString();
+  } catch {
+    return { success: false, error: "Webhook URL is invalid" };
   }
 
-  await octokit.rest.repos.createWebhook({
-    owner,
-    repo,
-    config: { url: fullWebhookUrl, content_type: "json" },
-    events: [
-      "pull_request",
-      "push",
-      "issues",
-      "deployment",
-      "deployment_status",
-    ],
-  });
+  try {
+    const token = await getGithubAccessToken();
+    if (!token) {
+      return { success: false, error: "GitHub access token is unavailable" };
+    }
 
-  return { success: true };
+    const octokit = new Octokit({ auth: token });
+    const { data: hooks } = await octokit.rest.repos.listWebhooks({
+      owner,
+      repo,
+    });
+    const existingHook = hooks.find(
+      (hook) => hook.config.url === fullWebhookUrl,
+    );
+
+    if (existingHook) {
+      return { success: true };
+    }
+
+    await octokit.rest.repos.createWebhook({
+      owner,
+      repo,
+      config: { url: fullWebhookUrl, content_type: "json" },
+      events: [
+        "pull_request",
+        "push",
+        "issues",
+        "deployment",
+        "deployment_status",
+      ],
+    });
+
+    return { success: true };
+  } catch (error) {
+    console.error("Failed to configure GitHub webhook", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error
+          ? error.message
+          : "Failed to configure GitHub webhook",
+    };
+  }
 };
 // ===============================
 // GETTING THE USER CONTRIBUTIONS.
