@@ -482,7 +482,7 @@ function SidebarContent({
         {/* Support & GitHub */}
         <div className="flex items-center justify-center gap-1">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=support@wekraft.xyz"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=support@wekraft.tech"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-[10px] font-medium text-white/30 hover:text-white/60 hover:bg-white/4 border border-transparent hover:border-white/6 transition-all duration-150"

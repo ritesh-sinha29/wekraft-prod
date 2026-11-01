@@ -117,8 +117,8 @@ export default function ContactContent() {
                 </div>
                 <div>
                   <p className="text-[10px] text-neutral-500 font-semibold uppercase tracking-widest">Email Support</p>
-                  <a href="mailto:support@wekraft.xyz" className="text-sm font-medium text-neutral-300 hover:text-white transition-colors mt-1 block">
-                    support@wekraft.xyz
+                  <a href="mailto:support@wekraft.tech" className="text-sm font-medium text-neutral-300 hover:text-white transition-colors mt-1 block">
+                    support@wekraft.tech
                   </a>
                 </div>
               </div>

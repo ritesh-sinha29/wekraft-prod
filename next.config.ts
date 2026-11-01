@@ -2,6 +2,23 @@ import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "wekraft.xyz" }],
+        destination: "https://wekraft.tech/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.wekraft.xyz" }],
+        destination: "https://wekraft.tech/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
   images: {
     qualities: [75, 85, 90],
     remotePatterns: [

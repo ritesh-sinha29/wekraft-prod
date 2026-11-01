@@ -25,7 +25,7 @@ import { ReferralTracker } from "@/providers/ReferralTracker";
 import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.xyz"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.tech"),
   title: {
     template: "%s | WeKraft",
     default: "WeKraft | AI-Powered Project Management & Workspace for Modern Software Teams",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   creator: "WeKraft",
   publisher: "WeKraft",
   alternates: {
-    canonical: "https://wekraft.xyz",
+    canonical: "https://wekraft.tech",
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WeKraft | AI-Powered Project Management & Workspace for Modern Software Teams",
     description: "The ultimate AI-powered project management platform and collaborative workspace built for modern software teams. Plan sprints, track to-dos, and manage developer capacity.",
-    url: "https://wekraft.xyz",
+    url: "https://wekraft.tech",
     siteName: "WeKraft",
     images: [
       {
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://wekraft.xyz/#organization",
+  "@id": "https://wekraft.tech/#organization",
   "name": "WeKraft",
   "alternateName": [
     "VKraft",
@@ -123,8 +123,8 @@ const orgSchema = {
     "We Craft",
     "We-Kraft"
   ],
-  "url": "https://wekraft.xyz",
-  "logo": "https://wekraft.xyz/logo.svg",
+  "url": "https://wekraft.tech",
+  "logo": "https://wekraft.tech/logo.svg",
   "slogan": "The Unified Developer Command Center",
   "disambiguatingDescription": "A developer-focused project management and real-time collaboration SaaS platform.",
   "knowsAbout": [
@@ -140,7 +140,7 @@ const orgSchema = {
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "support@wekraft.xyz",
+    "email": "support@wekraft.tech",
     "contactType": "customer support"
   }
 };
@@ -148,8 +148,8 @@ const orgSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://wekraft.xyz/#website",
-  "url": "https://wekraft.xyz",
+  "@id": "https://wekraft.tech/#website",
+  "url": "https://wekraft.tech",
   "name": "WeKraft",
   "alternateName": [
     "VKraft",
@@ -163,7 +163,7 @@ const websiteSchema = {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://wekraft.xyz/web/docs?q={search_term_string}"
+      "urlTemplate": "https://wekraft.tech/web/docs?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }

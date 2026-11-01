@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Ditch the slow loading screens and configuration bloat. Compare Jira with WeKraft's sub-second performance, native AI agents, and built-in meetings.",
   alternates: {
-    canonical: "https://wekraft.xyz/web/wekraft-vs-jira",
+    canonical: "https://wekraft.tech/web/wekraft-vs-jira",
   },
 };
 
@@ -26,19 +26,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.xyz/web"
+      "item": "https://wekraft.tech/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.xyz/web/why-wekraft"
+      "item": "https://wekraft.tech/web/why-wekraft"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "WeKraft vs Jira",
-      "item": "https://wekraft.xyz/web/wekraft-vs-jira"
+      "item": "https://wekraft.tech/web/wekraft-vs-jira"
     }
   ]
 };

@@ -213,7 +213,7 @@ const plans: Plan[] = [
       "Tailored limits, security, and dedicated support for your organization.",
     cta: "Contact Sales",
     ctaHref:
-      "mailto:support@wekraft.xyz?subject=WeKraft Enterprise Plan Inquiry",
+      "mailto:support@wekraft.tech?subject=WeKraft Enterprise Plan Inquiry",
     highlighted: false,
     icon: <Building2 className="h-4 w-4" />,
     features: customFeatures,

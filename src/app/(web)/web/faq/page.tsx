@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   description:
     "Frequently Asked Questions about WeKraft Security: Application-Level Encryption (ALE), End-to-End Encryption (E2E), and immutable Audit Logs for data privacy.",
   alternates: {
-    canonical: "https://wekraft.xyz/web/faq",
+    canonical: "https://wekraft.tech/web/faq",
   },
 };
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://wekraft.xyz/web/faq/#faqpage",
+  "@id": "https://wekraft.tech/web/faq/#faqpage",
   "mainEntity": [
     {
       "@type": "Question",
