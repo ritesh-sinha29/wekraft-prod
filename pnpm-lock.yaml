@@ -21,8 +21,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(@types/react@19.2.14)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@clerk/nextjs':
-        specifier: ^7.0.4
-        version: 7.0.4(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^7.9.23
+        version: 7.9.23(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@clerk/ui':
         specifier: ^1.2.1
         version: 1.2.1(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6))(@types/react@19.2.14)(bs58@5.0.0)(fastestsmallesttextencoderdecoder@1.0.22)(react-native@0.84.1(@babel/core@7.29.0)(@types/react@19.2.14)(bufferutil@4.1.0)(react@19.2.3)(utf-8-validate@6.0.6))(typescript@5.9.3)
@@ -804,8 +804,8 @@ packages:
   '@chevrotain/types@11.1.2':
     resolution: {integrity: sha512-U+HFai5+zmJCkK86QsaJtoITlboZHBqrVketcO2ROv865xfCMSFpELQoz1GkX5GzME8pTa+3kbKrZHQtI0gdbw==}
 
-  '@clerk/backend@3.2.0':
-    resolution: {integrity: sha512-3APNJ5jt5Db9f441FPVTjgzvPxjLhekygomkMOhsvPpItRNNEHgFZM/bGXYetgcOtUrO6vWcuhf1rlNSTRelhg==}
+  '@clerk/backend@3.26.5':
+    resolution: {integrity: sha512-znLhEv811EFbYvPjFQSGVFCaCQq6j6nz0H7UqvKXONVAoz0T9T9CVjz1j7Ii9EbjFyQikZ1uxV84WfDiDNiTeQ==}
     engines: {node: '>=20.9.0'}
 
   '@clerk/clerk-react@5.61.3':
@@ -820,16 +820,16 @@ packages:
     resolution: {integrity: sha512-CEcbEGKLR8XxGrYgEbcvHswD4lzQE+h39uBdTDxVSA0CVMHIC/PBFZcDKuXdzZhHhVh7xE7EGiR8zm5DWOWGTQ==}
     engines: {node: '>=20.9.0'}
 
-  '@clerk/nextjs@7.0.4':
-    resolution: {integrity: sha512-Vnx+2akiAxogvLW0ZdRU1idREdznRuhUYxSOI/YLfqVzZ+ORtTz5lrNlSKiBx9oSM6nd11LSKfFnVkLaAbU0fQ==}
+  '@clerk/nextjs@7.9.23':
+    resolution: {integrity: sha512-ilAL/4kKa85DZ28XPPqFIiDcxxZm8+3gA2zvRXjpLzcfRt/X1BzHalgpStv+QbwLLcLL/M5ftpvRlYMS787pTw==}
     engines: {node: '>=20.9.0'}
     peerDependencies:
       next: ^15.2.8 || ^15.3.8 || ^15.4.10 || ^15.5.9 || ^15.6.0-0 || ^16.0.10 || ^16.1.0-0
       react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
       react-dom: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
 
-  '@clerk/react@6.1.0':
-    resolution: {integrity: sha512-xHFvpQGBZGuuAp/d7+n2LAPoaeqPsqrG5ValR0//Ol6gRGCttnjJ0CVk806dlIzs7JZNLO68+i/MZanowCjEMw==}
+  '@clerk/react@6.18.4':
+    resolution: {integrity: sha512-3e2CkkI8QYsiMYpM8l4XHFF64eHCYgocC0ZB+Zws5ScJeMAPBgwvKpbDs/juxTlSzE2agURin1FGepv/5HppOA==}
     engines: {node: '>=20.9.0'}
     peerDependencies:
       react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
@@ -849,6 +849,18 @@ packages:
 
   '@clerk/shared@4.3.0':
     resolution: {integrity: sha512-Ydt8YGohNXEs6aBBLnti80OJT551yYWVTugFTO8Ee+uIZpStyqXF+ufBtJleuhfxs1D5KjtpIxc+hTqkZtqMyQ==}
+    engines: {node: '>=20.9.0'}
+    peerDependencies:
+      react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
+      react-dom: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  '@clerk/shared@4.43.1':
+    resolution: {integrity: sha512-0oyDzyEMZzU3tmvEVb4dts9ix5XqXBiNlCn9SWA8y/RNi8TtSHT5bPh/zn6HaA6fkdhJONjD6XVZIq7hkIdkyQ==}
     engines: {node: '>=20.9.0'}
     peerDependencies:
       react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
@@ -3842,6 +3854,9 @@ packages:
   '@tailwindcss/postcss@4.2.1':
     resolution: {integrity: sha512-OEwGIBnXnj7zJeonOh6ZG9woofIjGrd2BORfvE5p9USYKDCZoQmfqLcfNiRWoJlRWLdNPn2IgVZuWAOM4iTYMw==}
 
+  '@tanstack/query-core@5.105.1':
+    resolution: {integrity: sha512-B/rNlZoZ54w1dlddiUt9oEe1SLM+37c00SKLJEg9YH+7as3Y54P81o9Fh+2ujZ36tXPnQJ5oVe7AcyEWkyFhPg==}
+
   '@tanstack/query-core@5.90.16':
     resolution: {integrity: sha512-MvtWckSVufs/ja463/K4PyJeqT+HMlJWtw6PrCpywznd2NSgO3m4KwO9RqbFqGg6iDE8vVMFWMeQI4Io3eEYww==}
 
@@ -6080,6 +6095,9 @@ packages:
   js-cookie@3.0.5:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
+
+  js-cookie@3.0.8:
+    resolution: {integrity: sha512-yeJd4aNAdYZQjaon2bpD/Gb0B/omw7HQOsynXXcOiWVCacbBcPlgn8S/d1X6blFSaHao7ozqtW7NZW19xpCtIw==}
 
   js-tiktoken@1.0.21:
     resolution: {integrity: sha512-biOj/6M5qdgx5TKjDnFT1ymSpM5tbd3ylwDtrQvFQSu0Z7bBYko2dF+W/aUkXUPuk6IVpRxk/3Q2sHOzGlS36g==}
@@ -9183,11 +9201,10 @@ snapshots:
 
   '@chevrotain/types@11.1.2': {}
 
-  '@clerk/backend@3.2.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/backend@3.26.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@clerk/shared': 4.3.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/shared': 4.43.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       standardwebhooks: 1.0.0
-      tslib: 2.8.1
     transitivePeerDependencies:
       - react
       - react-dom
@@ -9207,23 +9224,21 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/nextjs@7.0.4(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/nextjs@7.9.23(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@clerk/backend': 3.2.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@clerk/react': 6.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@clerk/shared': 4.3.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/backend': 3.26.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/react': 6.18.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/shared': 4.43.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
       server-only: 0.0.1
-      tslib: 2.8.1
 
-  '@clerk/react@6.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/react@6.18.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@clerk/shared': 4.3.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/shared': 4.43.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
-      tslib: 2.8.1
 
   '@clerk/shared@3.47.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
@@ -9245,6 +9260,16 @@ snapshots:
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
       std-env: 3.10.0
+    optionalDependencies:
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+
+  '@clerk/shared@4.43.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+    dependencies:
+      '@tanstack/query-core': 5.105.1
+      dequal: 2.0.3
+      glob-to-regexp: 0.4.1
+      js-cookie: 3.0.8
     optionalDependencies:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
@@ -12762,6 +12787,8 @@ snapshots:
       postcss: 8.5.8
       tailwindcss: 4.2.1
 
+  '@tanstack/query-core@5.105.1': {}
+
   '@tanstack/query-core@5.90.16': {}
 
   '@tanstack/query-core@5.90.20': {}
@@ -12964,11 +12991,11 @@ snapshots:
   '@types/eslint-scope@3.7.7':
     dependencies:
       '@types/eslint': 9.6.1
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   '@types/eslint@9.6.1':
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
 
   '@types/estree-jsx@1.0.5':
@@ -15215,6 +15242,8 @@ snapshots:
   js-base64@3.7.8: {}
 
   js-cookie@3.0.5: {}
+
+  js-cookie@3.0.8: {}
 
   js-tiktoken@1.0.21:
     dependencies:
@@ -17842,7 +17871,7 @@ snapshots:
   webpack@5.105.4:
     dependencies:
       '@types/eslint-scope': 3.7.7
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
