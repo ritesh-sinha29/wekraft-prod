@@ -122,12 +122,12 @@ const Footer = () => {
                 {
                   icon: <FaInstagram className="w-4 h-4" />,
                   name: "Instagram",
-                  href: "https://www.instagram.com/wekraft.xyz/",
+                  href: "https://www.instagram.com/wekraft.tech/",
                 },
                 {
                   icon: <FaYoutube className="w-4 h-4" />,
                   name: "YouTube",
-                  href: "https://www.youtube.com/@wekraft.xyz_official",
+                  href: "https://www.youtube.com/@wekraft.tech_official",
                 },
                 {
                   icon: <FaWhatsapp className="w-4 h-4" />,
