@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     }
 
     // Uses your verified custom domain on Resend
-    const sender = "WeKraft <invite@wekraft.xyz>";
+    const sender = "WeKraft <invite@wekraft.tech>";
 
     const templateId = process.env.RESEND_INVITE_TEMPLATE_ID;
     if (!templateId) {

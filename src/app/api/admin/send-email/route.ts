@@ -48,7 +48,7 @@ export async function POST(req: Request) {
     }
 
     const resend = new Resend(apiKey);
-    const sender = "WeKraft Support <support@wekraft.xyz>";
+    const sender = "WeKraft Support <support@wekraft.tech>";
 
     const { data, error } = await resend.emails.send({
       from: sender,

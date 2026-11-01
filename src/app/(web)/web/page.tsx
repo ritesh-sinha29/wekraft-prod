@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   },
   description: "WeKraft is the next-generation AI project management platform that helps software teams plan, track, and execute sprints with an AI PM agent, developer workspace, and seamless issue tracking.",
   alternates: {
-    canonical: "https://wekraft.xyz/web",
+    canonical: "https://wekraft.tech/web",
   },
 };
 
 const softwareAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://wekraft.xyz/web/#softwareapp",
+  "@id": "https://wekraft.tech/web/#softwareapp",
   "name": "WeKraft",
   "operatingSystem": "All",
   "applicationCategory": "BusinessApplication",

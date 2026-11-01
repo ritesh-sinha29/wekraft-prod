@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { allDocs } from "@/lib/docs-config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.xyz";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.tech";
 
   // Static marketing & platform routes
   const routes = [
