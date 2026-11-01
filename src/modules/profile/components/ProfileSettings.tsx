@@ -169,6 +169,7 @@ export function ProfileSettings({ user, isUpgraded, onBack }: ProfileSettingsPro
     try {
       const res = await clerkUser?.createExternalAccount({
         strategy: "oauth_github",
+        additionalScopes: ["repo"],
         redirectUrl: window.location.href,
       });
       if (res?.verification?.externalVerificationRedirectURL) {

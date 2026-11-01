@@ -241,6 +241,7 @@ export default function DashboardPage() {
 
       const res = await clerkUser?.createExternalAccount({
         strategy: "oauth_github",
+        additionalScopes: ["repo"],
         redirectUrl: window.location.href,
       });
 
