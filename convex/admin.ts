@@ -1,9 +1,10 @@
 import { query } from "./_generated/server";
 
 const ADMIN_EMAILS = new Set([
-  "ronitrai1237@gmail.com",
-  "raironit127@gmail.com",
+  "partapbhanu516@gmail.com",
   "ssaiet.ritesh@gmail.com",
+  "ritesh.sinha_be2025@ssagrawal.org",
+  "riteshsinha4146@gmail.com",
 ]);
 
 async function verifyIsAdmin(ctx: any) {
