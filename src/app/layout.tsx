@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -14,7 +14,7 @@ const inter = Inter({
   display: "swap",
 });
 import { ClerkProvider } from "@clerk/nextjs";
-import { dark, neobrutalism } from "@clerk/ui/themes";
+import { dark } from "@clerk/ui/themes";
 import { Analytics } from "@vercel/analytics/next";
 import { ViewTransition } from "react";
 import { Toaster } from "@/components/ui/sonner";
