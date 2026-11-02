@@ -1,7 +1,7 @@
 # Wekraft
 
 <p align="center">
-  <img src="public/logo-dark.svg" alt="Wekraft Logo" width="120" />
+  <img src="public/logo.png" alt="Wekraft Logo" width="120" />
 </p>
 
 <p align="center">

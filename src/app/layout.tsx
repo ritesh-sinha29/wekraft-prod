@@ -101,7 +101,11 @@ export const metadata: Metadata = {
     images: ["/hero.png"],
   },
   icons: {
-    icon: "/logo.svg",
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: "/logo.png",
   },
   other: {
     "geo.region": "IN",

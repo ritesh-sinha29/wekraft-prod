@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Quote } from "lucide-react";
 import { useState } from "react";
 import NotificationCenter from "@/components/forgeui/notification-center";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
@@ -47,7 +48,7 @@ const Section1 = () => {
                 </span>
                 <span className="relative w-9 h-9 rounded-full border-2 border-black overflow-hidden bg-neutral-800 shrink-0 transition-transform duration-300 hover:scale-110 hover:z-10 cursor-pointer">
                   <Image
-                    src="/roxdp.jpg"
+                    src="/riteshdp2.jpg"
                     alt="Team member 3"
                     fill
                     sizes="36px"
@@ -233,26 +234,34 @@ const Section1 = () => {
           </div>
         </div>
         {/* FOUNDER THOUGHT */}
-        <div className="relative border-b border-white/10 md:border md:border-t-0 rounded-b-2xl bg-neutral-900 py-10 px-6 md:p-16 flex flex-col items-center text-center overflow-hidden">
-          <p className="relative z-10 text-white/90 text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mb-6 md:mb-12 leading-relaxed tracking-tight">
+        <div className="relative border-b border-white/10 md:border md:border-t-0 rounded-b-2xl bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-950 py-12 px-6 md:py-20 md:px-16 flex flex-col items-center text-center overflow-hidden">
+          {/* Ambient Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
+
+          {/* Quote Icon */}
+          <div className="relative mb-6 text-blue-500/30">
+            <Quote className="w-10 h-10 md:w-12 md:h-12 rotate-180" />
+          </div>
+
+          <p className="relative z-10 text-neutral-100 text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mb-6 md:mb-12 leading-relaxed tracking-tight">
             "WeKraft transformed the way our team executes projects. What once
             felt chaotic is now automated, and AI-driven — helping us move
             faster, and ship without missing deadlines."
           </p>
 
-          <div className="relative z-10 flex  gap-4">
+          <div className="relative z-10 inline-flex items-center gap-4 px-6 py-3.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-md shadow-2xl hover:border-white/20 transition-all duration-300">
             <img
-              src="/roxdp.jpg"
-              alt="rox"
-              className="w-14 h-14 rounded-full object-cover border border-white/20"
+              src="/riteshdp.jpg"
+              alt="Ritesh Sinha"
+              className="w-13 h-13 md:w-14 md:h-14 rounded-full object-cover ring-2 ring-blue-500/40 ring-offset-2 ring-offset-neutral-950"
             />
 
             <div className="text-left">
               <h4 className="text-white font-bold text-lg tracking-tight">
-                rox
+                Ritesh Sinha
               </h4>
               <p className="text-primary text-sm font-medium">
-                founder of vrsa analytics
+                Founder of IXION Labs
               </p>
             </div>
           </div>
