@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Asana is good for general task templates, but lacks developer workflows. Compare Asana with WeKraft's VS Code sync, unified docs, and AI PM agents.",
   alternates: {
-    canonical: "https://wekraft.tech/web/wekraft-vs-asana",
+    canonical: "https://wekraft.xyz/web/wekraft-vs-asana",
   },
 };
 
@@ -26,19 +26,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.tech/web/why-wekraft"
+      "item": "https://wekraft.xyz/web/why-wekraft"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "WeKraft vs Asana",
-      "item": "https://wekraft.tech/web/wekraft-vs-asana"
+      "item": "https://wekraft.xyz/web/wekraft-vs-asana"
     }
   ]
 };

@@ -213,7 +213,7 @@ const plans: Plan[] = [
       "Tailored limits, security, and dedicated support for your organization.",
     cta: "Contact Sales",
     ctaHref:
-      "mailto:support@wekraft.tech?subject=WeKraft Enterprise Plan Inquiry",
+      "mailto:support@wekraft.xyz?subject=WeKraft Enterprise Plan Inquiry",
     highlighted: false,
     icon: <Building2 className="h-4 w-4" />,
     features: customFeatures,
@@ -323,14 +323,6 @@ const featureCategories: FeatureCat[] = [
         icon: <Map className="h-3.5 w-3.5" />,
         free: "Basic",
         plus: true,
-        pro: true,
-        custom: "Advanced",
-      },
-      {
-        label: "Customer Desk",
-        icon: <Inbox className="h-3.5 w-3.5" />,
-        free: "Basic",
-        plus: "Basic",
         pro: true,
         custom: "Advanced",
       },

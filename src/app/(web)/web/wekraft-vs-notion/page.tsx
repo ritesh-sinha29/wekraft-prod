@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Notion is great for documents, but fails as a software engineering hub. Compare Notion with WeKraft's native developer cycles, VS Code sync, and AI agents.",
   alternates: {
-    canonical: "https://wekraft.tech/web/wekraft-vs-notion",
+    canonical: "https://wekraft.xyz/web/wekraft-vs-notion",
   },
 };
 
@@ -26,19 +26,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.tech/web/why-wekraft"
+      "item": "https://wekraft.xyz/web/why-wekraft"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "WeKraft vs Notion",
-      "item": "https://wekraft.tech/web/wekraft-vs-notion"
+      "item": "https://wekraft.xyz/web/wekraft-vs-notion"
     }
   ]
 };

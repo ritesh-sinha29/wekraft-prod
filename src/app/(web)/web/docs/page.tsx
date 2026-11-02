@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   title: "Documentation Hub",
   description: "Explore the WeKraft documentation. Learn how to plan sprints, manage tasks, coordinate with AI PM agents (Kaya), install the VS Code extension, and integrate with Git.",
   alternates: {
-    canonical: "https://wekraft.tech/web/docs",
+    canonical: "https://wekraft.xyz/web/docs",
   },
 };
 
@@ -52,13 +52,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Docs",
-      "item": "https://wekraft.tech/web/docs"
+      "item": "https://wekraft.xyz/web/docs"
     }
   ]
 };

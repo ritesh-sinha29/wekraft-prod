@@ -146,7 +146,6 @@ const ShowRepo = ({
       // No github account yet — create one
       const res = await clerkUser?.createExternalAccount({
         strategy: "oauth_github",
-        additionalScopes: ["repo"],
         redirectUrl: window.location.href,
       });
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Linear is fast, but it excludes collaboration. Compare Linear with WeKraft's native AI agents, integrated video rooms, and built-in team Wikis.",
   alternates: {
-    canonical: "https://wekraft.tech/web/wekraft-vs-linear",
+    canonical: "https://wekraft.xyz/web/wekraft-vs-linear",
   },
 };
 
@@ -25,19 +25,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.tech/web/why-wekraft"
+      "item": "https://wekraft.xyz/web/why-wekraft"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "WeKraft vs Linear",
-      "item": "https://wekraft.tech/web/wekraft-vs-linear"
+      "item": "https://wekraft.xyz/web/wekraft-vs-linear"
     }
   ]
 };

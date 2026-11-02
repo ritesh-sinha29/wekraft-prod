@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -14,18 +14,16 @@ const inter = Inter({
   display: "swap",
 });
 import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/ui/themes";
+import { dark, neobrutalism } from "@clerk/ui/themes";
 import { Analytics } from "@vercel/analytics/next";
-import { ViewTransition } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { ConvexClientProvider } from "@/providers/ConvexClientProvider";
 import { QueryProvider } from "@/providers/QueryProvider";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { ReferralTracker } from "@/providers/ReferralTracker";
 import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.tech"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.xyz"),
   title: {
     template: "%s | WeKraft",
     default: "WeKraft | AI-Powered Project Management & Workspace for Modern Software Teams",
@@ -65,7 +63,7 @@ export const metadata: Metadata = {
   creator: "WeKraft",
   publisher: "WeKraft",
   alternates: {
-    canonical: "https://wekraft.tech",
+    canonical: "https://wekraft.xyz",
   },
   robots: {
     index: true,
@@ -81,7 +79,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WeKraft | AI-Powered Project Management & Workspace for Modern Software Teams",
     description: "The ultimate AI-powered project management platform and collaborative workspace built for modern software teams. Plan sprints, track to-dos, and manage developer capacity.",
-    url: "https://wekraft.tech",
+    url: "https://wekraft.xyz",
     siteName: "WeKraft",
     images: [
       {
@@ -101,11 +99,7 @@ export const metadata: Metadata = {
     images: ["/hero.png"],
   },
   icons: {
-    icon: [
-      { url: "/logo.svg", type: "image/svg+xml" },
-      { url: "/logo.png", type: "image/png" },
-    ],
-    apple: "/logo.png",
+    icon: "/logo.svg",
   },
   other: {
     "geo.region": "IN",
@@ -118,7 +112,7 @@ export const metadata: Metadata = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://wekraft.tech/#organization",
+  "@id": "https://wekraft.xyz/#organization",
   "name": "WeKraft",
   "alternateName": [
     "VKraft",
@@ -127,8 +121,8 @@ const orgSchema = {
     "We Craft",
     "We-Kraft"
   ],
-  "url": "https://wekraft.tech",
-  "logo": "https://wekraft.tech/logo.svg",
+  "url": "https://wekraft.xyz",
+  "logo": "https://wekraft.xyz/logo.svg",
   "slogan": "The Unified Developer Command Center",
   "disambiguatingDescription": "A developer-focused project management and real-time collaboration SaaS platform.",
   "knowsAbout": [
@@ -144,7 +138,7 @@ const orgSchema = {
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "support@wekraft.tech",
+    "email": "support@wekraft.xyz",
     "contactType": "customer support"
   }
 };
@@ -152,8 +146,8 @@ const orgSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://wekraft.tech/#website",
-  "url": "https://wekraft.tech",
+  "@id": "https://wekraft.xyz/#website",
+  "url": "https://wekraft.xyz",
   "name": "WeKraft",
   "alternateName": [
     "VKraft",
@@ -167,7 +161,7 @@ const websiteSchema = {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://wekraft.tech/web/docs?q={search_term_string}"
+      "urlTemplate": "https://wekraft.xyz/web/docs?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -196,10 +190,7 @@ export default function RootLayout({
             >
               <ConvexClientProvider>
                 <main>
-                  <ViewTransition>
-                    <ReferralTracker />
-                    {children}
-                  </ViewTransition>
+                  {children}
                 </main>
               </ConvexClientProvider>
 

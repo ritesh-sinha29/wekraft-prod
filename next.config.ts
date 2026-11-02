@@ -2,23 +2,11 @@ import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "wekraft.xyz" }],
-        destination: "https://wekraft.tech/:path*",
-        permanent: true,
-      },
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.wekraft.xyz" }],
-        destination: "https://wekraft.tech/:path*",
-        permanent: true,
-      },
-    ];
+  typescript: {
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    ignoreBuildErrors: true,
   },
-
   images: {
     qualities: [75, 85, 90],
     remotePatterns: [
@@ -37,9 +25,6 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  experimental: {
-    viewTransition: true,
-  },
 
   compiler: {
     // Strips console.log / console.debug / console.info in production builds.

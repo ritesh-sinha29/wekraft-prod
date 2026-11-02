@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Plane is an open-source clone, but it lacks developer integration. Compare Plane with WeKraft's VS Code sync, codebase heatmaps, and autonomous dev agents.",
   alternates: {
-    canonical: "https://wekraft.tech/web/wekraft-vs-plane",
+    canonical: "https://wekraft.xyz/web/wekraft-vs-plane",
   },
 };
 
@@ -26,19 +26,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.tech/web/why-wekraft"
+      "item": "https://wekraft.xyz/web/why-wekraft"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "WeKraft vs Plane",
-      "item": "https://wekraft.tech/web/wekraft-vs-plane"
+      "item": "https://wekraft.xyz/web/wekraft-vs-plane"
     }
   ]
 };

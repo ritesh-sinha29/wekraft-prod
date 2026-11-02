@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       console.log("----------------------------------------");
       console.log("MOCK EMAIL SENT (RESEND_API_KEY not set):");
       console.log(`From: ${email}`);
-      console.log(`To: support@wekraft.tech`);
+      console.log(`To: support@wekraft.xyz`);
       console.log(`Subject: [Contact Form] ${subject}`);
       console.log(`Description: ${description}`);
       console.log("----------------------------------------");
@@ -31,12 +31,12 @@ export async function POST(req: Request) {
 
     const resend = new Resend(apiKey);
     
-    // We use invite@wekraft.tech as the sender since it is verified on Resend
-    const sender = "WeKraft Contact Form <invite@wekraft.tech>";
+    // We use invite@wekraft.xyz as the sender since it is verified on Resend
+    const sender = "WeKraft Contact Form <invite@wekraft.xyz>";
 
     const { data, error } = await resend.emails.send({
       from: sender,
-      to: ["support@wekraft.tech"],
+      to: ["support@wekraft.xyz"],
       replyTo: email,
       subject: `[Contact Form] ${subject}`,
       html: `

@@ -19,13 +19,9 @@ const AuthCallback = () => {
     //Wait for syncing to finish
     if (isStoreLoading) return;
 
-    // Don't bounce new users to "/" before the Convex mutation
-    // finishes and sets userId. Wait 3s before treating as unauthenticated.
     if (!isAuthenticated) {
-      const timeout = setTimeout(() => {
-        router.push("/");
-      }, 3000);
-      return () => clearTimeout(timeout);
+      router.push("/");
+      return;
     }
 
     if (user === undefined) return;

@@ -5,7 +5,7 @@
 
 # Documentation Section: Assign Issues
 Path: /web/docs/assign-issues
-URL: https://wekraft.tech/web/docs/assign-issues
+URL: https://wekraft.xyz/web/docs/assign-issues
 
 # Assign Issues
 
@@ -43,7 +43,7 @@ Learn how to assign team members to resolve bugs, coordinate assignments, and ma
 
 # Documentation Section: Assign Sprint Items
 Path: /web/docs/assign-sprints
-URL: https://wekraft.tech/web/docs/assign-sprints
+URL: https://wekraft.xyz/web/docs/assign-sprints
 
 # Assign Sprint Items
 
@@ -80,7 +80,7 @@ To maintain healthy sprint metrics and high team velocity:
 
 # Documentation Section: Assign Tasks
 Path: /web/docs/assign-tasks
-URL: https://wekraft.tech/web/docs/assign-tasks
+URL: https://wekraft.xyz/web/docs/assign-tasks
 
 # Assign Tasks
 
@@ -124,7 +124,7 @@ Actions on tasks are governed by project member roles:
 
 # Documentation Section: Assign Tickets
 Path: /web/docs/assign-tickets
-URL: https://wekraft.tech/web/docs/assign-tickets
+URL: https://wekraft.xyz/web/docs/assign-tickets
 
 # Assign Tickets
 
@@ -155,7 +155,7 @@ Learn how chat tickets are assigned to developers and tracked within Teamspace c
 
 # Documentation Section: Billing & Subscriptions
 Path: /web/docs/billing
-URL: https://wekraft.tech/web/docs/billing
+URL: https://wekraft.xyz/web/docs/billing
 
 # Billing & Subscriptions
 
@@ -239,7 +239,7 @@ sequenceDiagram
 
 # Documentation Section: Project Calendar
 Path: /web/docs/calendar
-URL: https://wekraft.tech/web/docs/calendar
+URL: https://wekraft.xyz/web/docs/calendar
 
 # Project Calendar
 
@@ -289,7 +289,7 @@ Active and planned sprints display as shaded horizontal bars covering their dura
 
 # Documentation Section: Community Hub
 Path: /web/docs/community
-URL: https://wekraft.tech/web/docs/community
+URL: https://wekraft.xyz/web/docs/community
 
 # Community Hub
 
@@ -329,7 +329,7 @@ WeKraft projects have visibility toggles managed on the Project Home page:
 
 # Documentation Section: Create Channels
 Path: /web/docs/create-channels
-URL: https://wekraft.tech/web/docs/create-channels
+URL: https://wekraft.xyz/web/docs/create-channels
 
 # Create Channels
 
@@ -366,7 +366,7 @@ Create custom chat channels in WeKraft Teamspace to organize project discussions
 
 # Documentation Section: Create Issues
 Path: /web/docs/create-issues
-URL: https://wekraft.tech/web/docs/create-issues
+URL: https://wekraft.xyz/web/docs/create-issues
 
 # Create Issues
 
@@ -429,7 +429,7 @@ Learn how to log bugs and issues in WeKraft manually, via task blockage escalati
 
 # Documentation Section: Create Sprints
 Path: /web/docs/create-sprints
-URL: https://wekraft.tech/web/docs/create-sprints
+URL: https://wekraft.xyz/web/docs/create-sprints
 
 # Create Sprints
 
@@ -470,7 +470,7 @@ Learn how to create planned sprints, set time-boxed goals, and load tasks or iss
 
 # Documentation Section: Create Tasks
 Path: /web/docs/create-tasks
-URL: https://wekraft.tech/web/docs/create-tasks
+URL: https://wekraft.xyz/web/docs/create-tasks
 
 # Create Tasks
 
@@ -524,7 +524,7 @@ Learn how to create backlog tasks, configure priorities, estimate durations, and
 
 # Documentation Section: Create Tickets
 Path: /web/docs/create-tickets
-URL: https://wekraft.tech/web/docs/create-tickets
+URL: https://wekraft.xyz/web/docs/create-tickets
 
 # Create Tickets
 
@@ -557,82 +557,9 @@ Learn how to log support tickets directly from the real-time chat composer in We
 
 ---
 
-# Documentation Section: Customer Desk
-Path: /web/docs/customer-desk
-URL: https://wekraft.tech/web/docs/customer-desk
-
-# Customer Desk
-
-The **WeKraft Customer Desk** is a centralized workspace module for managing customer profiles and triaging inbound service requests into actionable tasks or issues.
-
----
-
-## Where to Go & How to Go
-
-- **Where to Go**: Click on **Customer Desk** in the project sidebar (or navigate to `/dashboard/my-projects/[slug]/workspace/customer-desk`).
-- **How to Go**:
-  1. Toggle between the **Requests** and **Customers** tabs.
-  2. Use the search bar to filter items by name, email, or description.
-  3. Filter requests by status (All, Pending, Approved, Rejected) using the table header dropdown.
-
----
-
-## Managing Customer Profiles
-
-Customer profiles represent the clients or users submitting feedback or reports.
-- **Fields**: Name, Email, Contact (Optional).
-- **Adding a Customer**: Click the **Add Customer** button at the top right.
-- **Editing / Deleting a Customer**: Click the options menu next to a customer row under the **Customers** tab to edit details or delete the profile (deleting a customer profile also deletes all their linked requests).
-- **Permissions**: Adding, editing, and deleting customer profiles is restricted to the **Project Owner** only.
-
----
-
-## Triaging Service Requests
-
-Service requests are logged under specific customer profiles and triaged by project administrators.
-- **Fields**: Customer, Title, Description, Type (`Bug Report` or `Feature Request`).
-- **Logging a Request**:
-  1. Click **Log Request** at the top right.
-  2. Select the customer profile.
-  3. Enter the Title and Description.
-  4. Select the Request Type: **Feature Request** or **Bug Report**.
-  5. Click **Submit**. (Regular members can log requests; Viewers cannot).
-
----
-
-## Request Approval Pipeline
-
-Logged requests are marked as **Pending** and can be triaged with the following actions:
-
-### 1. Approving Requests
-- When you click **Approve** on a pending request, an approval dialog opens:
-  - Select team member **Assignees** to handle the item.
-  - Set the **Start Date** and **End Date** (for feature requests only).
-- Click **Approve**.
-- The request status updates to **Approved** and WeKraft automatically creates:
-  - An internal **Task** (if it was a Feature Request), populated with the estimated dates and assignees.
-  - An internal **Issue** (if it was a Bug Report), populated with the assigned team members.
-
-### 2. Rejecting Requests
-- If a request is duplicate or out of scope, click **Reject**.
-- The request status updates to **Rejected** and is discarded.
-
----
-
-## Roles & Privileges
-
-| Action | Owner | Admin | Member | Viewer |
-|---|:---:|:---:|:---:|:---:|
-| Manage Customers (Create, Edit, Delete) | ✅ | ❌ | ❌ | ❌ |
-| Log Service Requests | ✅ | ✅ | ✅ | ❌ |
-| Approve / Reject Requests | ✅ | ✅ | ❌ | ❌ |
-| View Customer Desk Data | ✅ | ✅ | ✅ | ✅ |
-
----
-
 # Documentation Section: Dashboard & Navigation
 Path: /web/docs/dashboard
-URL: https://wekraft.tech/web/docs/dashboard
+URL: https://wekraft.xyz/web/docs/dashboard
 
 # Dashboard & Navigation
 
@@ -789,7 +716,7 @@ Click any notification to navigate directly to the relevant item. Hover over a n
 
 # Documentation Section: Delete Projects
 Path: /web/docs/delete-projects
-URL: https://wekraft.tech/web/docs/delete-projects
+URL: https://wekraft.xyz/web/docs/delete-projects
 
 # Delete Projects
 
@@ -811,7 +738,7 @@ In WeKraft, manual deletion of projects is restricted to prevent accidental data
 
 # Documentation Section: Edit Issues
 Path: /web/docs/edit-issues
-URL: https://wekraft.tech/web/docs/edit-issues
+URL: https://wekraft.xyz/web/docs/edit-issues
 
 # Edit Issues
 
@@ -864,7 +791,7 @@ While the side sheet is open, you can also perform these quick modifications:
 
 # Documentation Section: Edit & Monitor Sprints
 Path: /web/docs/edit-sprints
-URL: https://wekraft.tech/web/docs/edit-sprints
+URL: https://wekraft.xyz/web/docs/edit-sprints
 
 # Edit & Monitor Sprints
 
@@ -911,7 +838,7 @@ During an active or completed sprint, the details page displays three real-time 
 
 # Documentation Section: Edit Tasks
 Path: /web/docs/edit-tasks
-URL: https://wekraft.tech/web/docs/edit-tasks
+URL: https://wekraft.xyz/web/docs/edit-tasks
 
 # Edit Tasks
 
@@ -959,7 +886,7 @@ Modify task properties, update progress statuses, link codebase paths.
 
 # Documentation Section: Edit & Resolve Tickets
 Path: /web/docs/edit-tickets
-URL: https://wekraft.tech/web/docs/edit-tickets
+URL: https://wekraft.xyz/web/docs/edit-tickets
 
 # Edit & Resolve Tickets
 
@@ -995,7 +922,7 @@ Learn how to view, reopen, and close active chat tickets.
 
 # Documentation Section: IDE Extension
 Path: /web/docs/extension
-URL: https://wekraft.tech/web/docs/extension
+URL: https://wekraft.xyz/web/docs/extension
 
 # IDE Extension
 
@@ -1080,7 +1007,7 @@ sequenceDiagram
 
 # Documentation Section: Quick Start Guide
 Path: /web/docs/getting-started
-URL: https://wekraft.tech/web/docs/getting-started
+URL: https://wekraft.xyz/web/docs/getting-started
 
 # Quick Start Guide
 
@@ -1142,7 +1069,7 @@ A: Yes, you can unlink and link a new repository from the **Repositories** dashb
 
 # Documentation Section: Harry Dev Agent (Beta / Coming Soon)
 Path: /web/docs/harry-dev
-URL: https://wekraft.tech/web/docs/harry-dev
+URL: https://wekraft.xyz/web/docs/harry-dev
 
 # Harry Dev Agent (Beta / Coming Soon)
 
@@ -1186,7 +1113,7 @@ WeKraft will offer two model presets for codebase resolution:
 
 # Documentation Section: Codebase Map
 Path: /web/docs/heatmaps
-URL: https://wekraft.tech/web/docs/heatmaps
+URL: https://wekraft.xyz/web/docs/heatmaps
 
 # Codebase Map
 
@@ -1257,7 +1184,7 @@ Database structures and highlight overlays are gated by user subscription tiers:
 
 # Documentation Section: Invite Member
 Path: /web/docs/invite-member
-URL: https://wekraft.tech/web/docs/invite-member
+URL: https://wekraft.xyz/web/docs/invite-member
 
 # Invite Member
 
@@ -1302,7 +1229,7 @@ You can view current seats and availability in the plan banner at the top of the
 
 # Documentation Section: Issues & Bug Tracking
 Path: /web/docs/issues
-URL: https://wekraft.tech/web/docs/issues
+URL: https://wekraft.xyz/web/docs/issues
 
 # Issues & Bug Tracking
 
@@ -1357,7 +1284,7 @@ stateDiagram-v2
 
 # Documentation Section: Join Projects
 Path: /web/docs/join-projects
-URL: https://wekraft.tech/web/docs/join-projects
+URL: https://wekraft.xyz/web/docs/join-projects
 
 # Join Projects
 
@@ -1399,7 +1326,7 @@ If a project has reached its seat capacity, the owner or admin cannot accept new
 
 # Documentation Section: Kaya PM Agent
 Path: /web/docs/kaya-pm
-URL: https://wekraft.tech/web/docs/kaya-pm
+URL: https://wekraft.xyz/web/docs/kaya-pm
 
 # Kaya PM Agent
 
@@ -1473,7 +1400,7 @@ For operations that modify project states, Kaya enters an interrupt state. The o
 
 # Documentation Section: Manage Teams & Roles
 Path: /web/docs/manage-teams
-URL: https://wekraft.tech/web/docs/manage-teams
+URL: https://wekraft.xyz/web/docs/manage-teams
 
 # Manage Teams & Roles
 
@@ -1551,7 +1478,7 @@ When developers use your project's invite link:
 
 # Documentation Section: Notifications & Alerts
 Path: /web/docs/notifications
-URL: https://wekraft.tech/web/docs/notifications
+URL: https://wekraft.xyz/web/docs/notifications
 
 # Notifications & Alerts
 
@@ -1641,14 +1568,14 @@ The backend tracks exactly ten (10) notification types for various user and syst
 
 # Documentation Section: WeKraft Platform Overview
 Path: /web/docs/overview
-URL: https://wekraft.tech/web/docs/overview
+URL: https://wekraft.xyz/web/docs/overview
 
 # WeKraft Platform Overview
 
 Welcome to the WeKraft Platform Documentation. WeKraft is a unified software engineering management and real-time collaboration workspace designed to eliminate context-switching. By consolidating **agile project planning**, **team communication**, **git repositories mapping**, and **editor-level integrations** into a single reactive environment, WeKraft provides engineering teams with a single source of truth.
 
 > [!NOTE]
-> **Brand Entity Clarification:** WeKraft (available at [wekraft.tech](https://wekraft.tech)) is a developer-focused software-as-a-service (SaaS) platform. It is a unified command center for software engineering teams.
+> **Brand Entity Clarification:** WeKraft (available at [wekraft.xyz](https://wekraft.xyz)) is a developer-focused software-as-a-service (SaaS) platform. It is a unified command center for software engineering teams.
 > 
 > *Aliases & Alternate Spellings:* VKraft, VCraft, Wkraft, We-Kraft, We Craft.
 
@@ -1733,7 +1660,7 @@ No. WeKraft only maps repository structures (directories and filenames) to displ
 
 # Documentation Section: Privacy Policy
 Path: /web/docs/privacy
-URL: https://wekraft.tech/web/docs/privacy
+URL: https://wekraft.xyz/web/docs/privacy
 
 # Privacy Policy
 
@@ -1782,7 +1709,7 @@ We use standard cookies and local storage to preserve active authentication sess
 
 # Documentation Section: User Profile
 Path: /web/docs/profile
-URL: https://wekraft.tech/web/docs/profile
+URL: https://wekraft.xyz/web/docs/profile
 
 # User Profile
 
@@ -1838,7 +1765,7 @@ Clicking the gear icon in the header switches the viewport to the profile settin
 
 # Documentation Section: Project Workspace Dashboard
 Path: /web/docs/project-workspace
-URL: https://wekraft.tech/web/docs/project-workspace
+URL: https://wekraft.xyz/web/docs/project-workspace
 
 # Project Workspace Dashboard
 
@@ -1900,7 +1827,7 @@ Available to all projects, but options can only be modified by the **Project Own
 
 # Documentation Section: Projects Management
 Path: /web/docs/projects
-URL: https://wekraft.tech/web/docs/projects
+URL: https://wekraft.xyz/web/docs/projects
 
 # Projects Management
 
@@ -1958,7 +1885,7 @@ If you exceed these limits, you must archive/delete existing projects or upgrade
 
 # Documentation Section: Referral Program
 Path: /web/docs/referrals
-URL: https://wekraft.tech/web/docs/referrals
+URL: https://wekraft.xyz/web/docs/referrals
 
 # Referral Program
 
@@ -1998,7 +1925,7 @@ If you were referred by someone else, you can enter their referral code during t
 
 # Documentation Section: Git Repositories
 Path: /web/docs/repositories
-URL: https://wekraft.tech/web/docs/repositories
+URL: https://wekraft.xyz/web/docs/repositories
 
 # Git Repositories
 
@@ -2049,7 +1976,7 @@ WeKraft relies on secure OAuth tokens to communicate with your code hosting prov
 
 # Documentation Section: Security & Permissions
 Path: /web/docs/security
-URL: https://wekraft.tech/web/docs/security
+URL: https://wekraft.xyz/web/docs/security
 
 # Security & Permissions
 
@@ -2190,7 +2117,7 @@ When you connect a code repository, WeKraft only requests the minimum permission
 
 # Documentation Section: Keyboard Shortcuts
 Path: /web/docs/shortcuts
-URL: https://wekraft.tech/web/docs/shortcuts
+URL: https://wekraft.xyz/web/docs/shortcuts
 
 # Keyboard Shortcuts
 
@@ -2230,7 +2157,7 @@ These autocomplete triggers are used exclusively inside the **Team Space input f
 
 # Documentation Section: Sprints
 Path: /web/docs/sprints
-URL: https://wekraft.tech/web/docs/sprints
+URL: https://wekraft.xyz/web/docs/sprints
 
 # Sprints
 
@@ -2270,7 +2197,7 @@ stateDiagram-v2
 
 # Documentation Section: Help & Support
 Path: /web/docs/support
-URL: https://wekraft.tech/web/docs/support
+URL: https://wekraft.xyz/web/docs/support
 
 # Help & Support
 
@@ -2348,7 +2275,7 @@ To help WeKraft engineers resolve issues quickly, please follow these tips:
 
 # Documentation Section: Tasks & Backlog
 Path: /web/docs/tasks
-URL: https://wekraft.tech/web/docs/tasks
+URL: https://wekraft.xyz/web/docs/tasks
 
 # Tasks & Backlog
 
@@ -2406,7 +2333,7 @@ stateDiagram-v2
 
 # Documentation Section: Team Meet Video Rooms
 Path: /web/docs/team-meet
-URL: https://wekraft.tech/web/docs/team-meet
+URL: https://wekraft.xyz/web/docs/team-meet
 
 # Team Meet Video Rooms
 
@@ -2457,7 +2384,7 @@ The main portal renders a detailed feed card list of all past and active meeting
 
 # Documentation Section: Team Space Permissions
 Path: /web/docs/team-space-permissions
-URL: https://wekraft.tech/web/docs/team-space-permissions
+URL: https://wekraft.xyz/web/docs/team-space-permissions
 
 # Team Space Permissions
 
@@ -2507,7 +2434,7 @@ While typing in the chat composer, you can quickly insert objects using hotkeys:
 
 # Documentation Section: Team Space Settings
 Path: /web/docs/team-space-settings
-URL: https://wekraft.tech/web/docs/team-space-settings
+URL: https://wekraft.xyz/web/docs/team-space-settings
 
 # Team Space Settings
 
@@ -2548,7 +2475,7 @@ Configure channel details, manage membership lists, delete channels, and adjust 
 
 # Documentation Section: Teamspace Chat & Channels
 Path: /web/docs/team-space
-URL: https://wekraft.tech/web/docs/team-space
+URL: https://wekraft.xyz/web/docs/team-space
 
 # Teamspace Chat & Channels
 
@@ -2600,7 +2527,7 @@ The message input composer is designed for high-speed developer navigation:
 
 # Documentation Section: Terms of Service
 Path: /web/docs/terms
-URL: https://wekraft.tech/web/docs/terms
+URL: https://wekraft.xyz/web/docs/terms
 
 # Terms of Service
 
@@ -2638,7 +2565,7 @@ We reserve the right to modify these Terms of Service at any time. Changes will 
 
 # Documentation Section: Tickets
 Path: /web/docs/tickets
-URL: https://wekraft.tech/web/docs/tickets
+URL: https://wekraft.xyz/web/docs/tickets
 
 # Tickets
 
@@ -2668,7 +2595,7 @@ Unlike separate client-facing desks, Chat Tickets are integrated directly into T
 
 # Documentation Section: Project Timeline & Gantt Chart
 Path: /web/docs/time-logs
-URL: https://wekraft.tech/web/docs/time-logs
+URL: https://wekraft.xyz/web/docs/time-logs
 
 # Project Timeline & Gantt Chart
 

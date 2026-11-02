@@ -43,7 +43,7 @@ for (const file of files) {
 
   content += `\n# Documentation Section: ${title}\n`;
   content += `Path: /web/docs/${slug}\n`;
-  content += `URL: https://wekraft.tech/web/docs/${slug}\n\n`;
+  content += `URL: https://wekraft.xyz/web/docs/${slug}\n\n`;
   content += `${fileContent.trim()}\n\n`;
   content += `---\n`;
 }

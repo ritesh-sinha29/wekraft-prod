@@ -4,6 +4,11 @@ import { allDocs } from "@/lib/docs-config";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://wekraft.tech";
 
+  // Prevent indexing of the beta subdomain
+  if (baseUrl.includes("beta.wekraft.tech")) {
+    return [];
+  }
+
   // Static marketing & platform routes
   const routes = [
     "",
@@ -48,7 +53,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/web/docs/${doc.slug}`,
       lastModified: new Date(lastModDate),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.8,
     };
   });
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Why WeKraft",
   description: "See how WeKraft stacks up against Jira, Linear, Asana, Notion, and Plane. Discover the AI-first engineering workspace.",
   alternates: {
-    canonical: "https://wekraft.tech/web/why-wekraft",
+    canonical: "https://wekraft.xyz/web/why-wekraft",
   },
 };
 
@@ -21,13 +21,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Compare",
-      "item": "https://wekraft.tech/web/why-wekraft"
+      "item": "https://wekraft.xyz/web/why-wekraft"
     }
   ]
 };

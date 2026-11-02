@@ -48,7 +48,7 @@ export async function generateMetadata({
     title: doc.title,
     description: doc.description,
     alternates: {
-      canonical: `https://wekraft.tech/web/docs/${slug}`,
+      canonical: `https://wekraft.xyz/web/docs/${slug}`,
     },
     openGraph: {
       title: `${doc.title} | WeKraft Documentation`,
@@ -454,13 +454,13 @@ export default async function DocPage({
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://wekraft.tech/web"
+      "item": "https://wekraft.xyz/web"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Docs",
-      "item": "https://wekraft.tech/web/docs"
+      "item": "https://wekraft.xyz/web/docs"
     }
   ];
 
@@ -469,7 +469,7 @@ export default async function DocPage({
       "@type": "ListItem",
       "position": 3,
       "name": category,
-      "item": `https://wekraft.tech/web/docs#${category.toLowerCase().replace(/\s+/g, "-")}`
+      "item": `https://wekraft.xyz/web/docs#${category.toLowerCase().replace(/\s+/g, "-")}`
     });
   }
 
@@ -477,7 +477,7 @@ export default async function DocPage({
     "@type": "ListItem",
     "position": category ? 4 : 3,
     "name": docInfo?.title || "Article",
-    "item": `https://wekraft.tech/web/docs/${slug}`
+    "item": `https://wekraft.xyz/web/docs/${slug}`
   });
 
   const breadcrumbSchema = {
